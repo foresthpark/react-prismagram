@@ -14,17 +14,17 @@ type User {
 }
 
 type Post {
-    id: ID! @id
+  id: ID! @id
   files: [File!]!
   location: String
   caption: String!
-  likes: [Like!]!
+  likes: [Like!]! 
   comments: [Comment!]!
   user: User!
 }
 
 type Like {
-    id: ID! @id
+  id: ID! @id
   user: User!
   post: Post!
 }
