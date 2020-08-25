@@ -1,0 +1,38 @@
+{
+  "name": "react-prismagram",
+  "version": "1.0.0",
+  "description": "IG Clone with Express, Prisma, React, and React Native",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foresthpark/react-prismagram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foresthpark/react-prismagram/issues"
+  },
+  "homepage": "https://github.com/foresthpark/react-prismagram#readme",
+  "dependencies": {
+    "@babel/core": "^7.11.4",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.11.0",
+    "babel-node": "0.0.1-security",
+    "dotenv": "^8.2.0",
+    "graphql-tools": "^6.0.18",
+    "graphql-yoga": "^1.18.3",
+    "merge-graphql-schemas": "^1.7.8",
+    "morgan": "^1.10.0",
+    "prisma-client-lib": "^1.34.10"
+  },
+  "devDependencies": {
+    "@prisma/cli": "^2.5.1",
+    "babel-cli": "^6.26.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js",
+    "deploy": "prisma1 deploy",
+    "generate": "prisma1 generate",
+    "goprisma": "prisma1 deploy && prisma1 generate"
+  }
+}
